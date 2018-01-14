@@ -100,5 +100,5 @@ imprimir([CABEZA|CUERPO]):-write(CABEZA), write('\n'),imprimir(CUERPO).
 /*Regla Princial, inicia la interacion con el usuario para obtener la ruta desde
 una ciudad destino a una ciudad de origen*/
 iniciar():-pedir_origen(X), pedir_destino(Y), write('Usted va de '), write(X),
-write(' a '), write(Y), write(' La posible ruta y la distancia total que debera recorrer se muestran a continuacion\n\n'),
+write(' a '), write(Y), write(' La ruta y la distancia total que debera recorrer se muestran a continuacion\n\n'),
 plan(X, Y, DistanciaRuta), imprimir(DistanciaRuta).
